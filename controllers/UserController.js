@@ -9,7 +9,7 @@ exports.loginUser =  (req, res) => {
         }
         console.log(user,req.body);
         if(user[0] && user[0].password === req.body.password){
-            res.send({email:user[0].email, role:user[0].role, registered:true})
+            res.send({email:user[0].userId, role:user[0].role, registered:true})
         }
         else{
             res.status(500).send({'Success':false});

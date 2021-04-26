@@ -11,4 +11,4 @@ const UserSchema = new Schema({
     role:String
 });
 
-export default mongoose.model('User', UserSchema);
+export default mongoose.model('Userflight', UserSchema);

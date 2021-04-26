@@ -7,7 +7,8 @@ import mongoose, {
  */
 const UserSchema = new Schema({
     userId: String,
-    password: String
+    password: String,
+    role:String
 });
 
 export default mongoose.model('User', UserSchema);
